@@ -36,7 +36,7 @@
 
 i {
     cursor: pointer;
-    
+    animation: bounce 0.8s infinite alternate;
 }
 
 .right {
@@ -54,3 +54,12 @@ i {
 i:hover {
     color: darkorange;
 }
+
+@keyframes bounce {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(-0.5em);
+    }
+  }
