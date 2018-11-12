@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <div class="slide-1">
-        <h2>Slide 1</h2>
-        <i class="material-icons arrow-1">arrow_forward_ios</i>
-    </div>
-    <div class="slide-2">
-        <h2>Slide 2</h2>
-        <i class="material-icons arrow-2">arrow_forward_ios</i>
-    </div>
-    <div class="slide-3">
-        <h2>Slide 3</h2>
-        <i class="material-icons arrow-3">arrow_forward_ios</i>
-    </div>
+
+	<div class="presentation">
+		<div class="slide slide-1">
+			<h2>Slide 1</h2>
+			<i class="material-icons arrow1" onclick="first_arrow()">arrow_forward_ios</i>
+		</div>
+		<div class="slide slide-2">
+			<h2>Slide 2</h2>
+			<i class="material-icons arrow2" onclick="second_arrow()">arrow_forward_ios</i>
+		</div>
+		<div class="slide slide-3">
+			<h2>Slide 3</h2>
+			<i class="material-icons arrow3" onclick="arrow3()">arrow_forward_ios</i>
+		</div>
+	</div>
+    
+
 </body>
 </html>
