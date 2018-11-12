@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-}
+@import "normalize.scss";
 
 .slide {
     height: 100vh;
@@ -11,7 +9,8 @@
     display: flex;
     background-color: aqua;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .slide-2 {
@@ -31,8 +30,6 @@
 .block {
     display: block;
 }
-
-
 
 i {
     cursor: pointer;
@@ -55,6 +52,18 @@ i:hover {
     color: darkorange;
 }
 
+h2 {
+    animation: fadein 5s;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+.colorChange {
+    animation: colorChange 10s infinite alternate;
+}
+
 @keyframes bounce {
     from {
       transform: translateX(0px);
@@ -63,3 +72,16 @@ i:hover {
       transform: translateX(-0.5em);
     }
   }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes colorChange {
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}

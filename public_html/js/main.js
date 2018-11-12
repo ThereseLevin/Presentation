@@ -6,6 +6,7 @@
 let arrow1 = document.querySelector('.arrow1');
 let arrow2 = document.querySelector('.arrow2');
 let arrow3 = document.querySelector('.arrowBack3');
+let h3 = document.querySelector("h3");
 
 /* Functions for switching to the right with arrows */
 function first_arrow() { 
@@ -30,3 +31,8 @@ function third_arrow_back() {
     arrow3.parentElement.classList.remove("block");
 }
 
+/* Eventlisternes */
+
+h3.addEventListener("click", function(){
+    h3.classList.add("colorChange");
+});
