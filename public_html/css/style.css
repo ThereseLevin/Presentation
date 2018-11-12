@@ -12,24 +12,28 @@
   background-color: aqua;
 }
 
-.slide-1-2 {
+.none {
   display: none;
+}
+
+.block {
+  display: block;
 }
 
 .slide-2 {
-  display: block;
+  display: none;
   background-color: rebeccapurple;
 }
 
-.slide-2-2 {
-  display: none;
-}
-
 .slide-3 {
-  display: block;
+  display: none;
   background-color: saddlebrown;
 }
 
-.slide-3-2 {
-  display: none;
+i {
+  cursor: pointer;
+}
+
+i:hover {
+  color: darkorange;
 }
