@@ -8,8 +8,10 @@
 }
 
 .slide-1 {
-    display: block;
+    display: flex;
     background-color: aqua;
+    justify-content: center;
+    align-self: center;
 }
 
 .none {
@@ -21,8 +23,8 @@
 }
 
 .slide-2 {
-    display: none;
     background-color: rebeccapurple;
+    display: none;
 }
 
 .slide-3 {
@@ -32,6 +34,19 @@
 
 i {
     cursor: pointer;
+    
+}
+
+.right {
+    position: absolute;
+    right: 1em;
+    top: 50vh;
+}
+
+.left {
+    position: absolute;
+    left: 1em;
+    top: 50vh;
 }
 
 i:hover {
