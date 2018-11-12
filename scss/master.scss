@@ -14,14 +14,6 @@
     align-self: center;
 }
 
-.none {
-    display: none;
-}
-
-.block {
-    display: block;
-}
-
 .slide-2 {
     background-color: rebeccapurple;
     display: none;
@@ -31,6 +23,16 @@
     display: none;
     background-color: saddlebrown;
 }
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+
 
 i {
     cursor: pointer;
