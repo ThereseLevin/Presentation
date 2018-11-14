@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/* - - - - VARIABLES - - - - */
+
+/* COLORS */
+$primary-color: #305e36;
+$secondary-color: #4A2621;
+$tertiary-color:#CE9A3A;
+$quaternary-color: #000000;
+$quinary-color: #FFFFFF;
+$transparent: rgba(255, 255, 255, 0.8);
+
+/* FONTS */
+
+/* Font family */
+$font-main: 'Lobster Two', cursive, serif;
+$font-second:  'Acme', sans-serif;
+$font-third: 'Didact Gothic', sans-serif;
+
+/* Sizes */
+$size-main: 6em;
+$size-main-2: 4.5em;
+$size-second: 3em;
+$size-third: 1.5em;
+
+/* Shadow */
+$shadow: 2px 2px $quaternary-color;

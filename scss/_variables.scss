@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+/* - - - - VARIABLES - - - - */
+
+/* COLORS */
+$primary-color: #305e36;
+$secondary-color: rgb(136, 124, 169);
+$tertiary-color:#CE9A3A;
+$quaternary-color: #000000;
+$quinary-color: #FFFFFF;
+$transparent: rgba(255, 255, 255, 0.8);
+
+/* FONTS */
+
+/* Font family */
+$font-main: 'Didact Gothic', sans-serif;
+$font-second:  'Poiret One', cursive;
+$font-third: 'Didact Gothic', sans-serif;
+
+
+/* Shadow */
+$shadow: 2px 2px $quaternary-color;
