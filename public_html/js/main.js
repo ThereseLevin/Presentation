@@ -8,6 +8,9 @@ let arrow4 = document.querySelector('.arrow4');
 let h3 = document.querySelector("h3");
 let slide2H2 = document.querySelector(".slide2H2");
 let IE = document.querySelector(".IE");
+let h2 = document.querySelector(".h2");
+let wat = document.querySelector(".wat");
+
 
 /* Functions for switching to the right with arrows */
 function first_arrow() { 
@@ -43,6 +46,10 @@ function fourth_arrow_back() {
     arrow4.parentElement.classList.remove("block");
 }
 
+function clickMe(){
+    h2.classList.add("none");
+    wat.classList.remove("none");
+}
 
 
 /* Eventlisternes */
@@ -54,6 +61,7 @@ h3.addEventListener("click", function(){
 slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
+
 
 /* Set Intervals */
 

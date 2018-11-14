@@ -351,7 +351,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #CE9A3A;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -362,8 +362,30 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: fadein2 2s;
-          animation: fadein2 2s;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  -webkit-animation: fadein2 2s forwards;
+          animation: fadein2 2s forwards;
+  z-index: 10;
+}
+
+.h2 {
+  cursor: pointer;
+}
+
+.wat {
+  font-size: 4em;
+}
+
+.frog {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-image: url("../media/frog.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
 }
 
 .slide-2 {
