@@ -20,6 +20,10 @@
     background-color: $secondary-color;
     display: none;
     animation: fadein3 2s;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .slide-3 {
@@ -28,12 +32,20 @@
     animation: fadein2 5s;
 }
 
+.flex-row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $font-second;
+}
+
 .none {
     display: none;
 }
 
 .block {
-    display: block;
+    display: flex;
 }
 
 i {
@@ -61,26 +73,74 @@ i:hover {
 h2 {
     animation: fadein 3s;
     font-family: $font-main;
+    margin: 0;
+    animation: fadein 5s;
 }
+
+p {
+    font-family: $font-main;
+}
+
 
 h3 {
     cursor: pointer;
     font-family: $font-main;
 }
 
-span {
+
+.span1 {
     display: block;
     text-align: center;
-    font-size: 10em;
-    animation: fadein 10s;
+    font-size: 8em;
     font-family: $font-second;
 }
 
+.span2 {
+    animation: textFadeIn 0.5s;
+}
 
+.span3 {
+    animation: textFadeIn 1s;
+}
+
+.span4 {
+    animation: textFadeIn 1.5s;
+}
+
+.span5 {
+    animation: textFadeIn 2s;
+}
+
+.span6 {
+    animation: textFadeIn 2.5s;
+}
+
+.span7 {
+    animation: textFadeIn 3s;
+}
+
+.span8 {
+    animation: textFadeIn 3.5s;
+}
+
+.span9 {
+    animation: textFadeIn 4s;
+}
+
+.span10 {
+    animation: textFadeIn 4.5s;
+}
+
+.slide2H2 {
+    animation: dropin 2s;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
 
 .colorChange {
     animation: colorChange 10s infinite alternate;
 }
+
 
 @keyframes bounce {
     from {
@@ -123,10 +183,29 @@ span {
     }
 }
 
+@keyframes dropin {
+    from {
+        transform: translateY(-15em);
+        font-size: 0;
+      }
+      to {
+        transform: translateX(0px);
+        font-size: 3em;
+      }
+}
+
 @keyframes colorChange {
     0%   {color:red;}
     25%  {color:yellow;}
     50%  {color:blue;}
     75%  {color:green;}
     100% {color:red;}
+}
+
+@keyframes textFadeIn {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0;}
+    75%  {opacity: 0.5;}
+    100% {opacity: 1;}
 }
