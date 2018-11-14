@@ -3,7 +3,8 @@
 /* Variables with the element for the arrows */ 
 let arrow1 = document.querySelector('.arrow1');
 let arrow2 = document.querySelector('.arrow2');
-let arrow3 = document.querySelector('.arrowBack3');
+let arrow3 = document.querySelector('.arrow3');
+let arrow4 = document.querySelector('.arrow4');
 let h3 = document.querySelector("h3");
 let slide2H2 = document.querySelector(".slide2H2");
 let IE = document.querySelector(".IE");
@@ -19,6 +20,12 @@ function second_arrow() {
     arrow3.parentElement.classList.add("block");
 }
 
+function third_arrow() {
+    arrow4.parentElement.classList.add("block"); 
+    arrow3.parentElement.classList.remove("block");
+       
+}
+
 /* Functions for switching to the left with arrows */
 
 function second_arrow_back() {
@@ -29,6 +36,11 @@ function second_arrow_back() {
 function third_arrow_back() {
     arrow2.parentElement.classList.add("block");
     arrow3.parentElement.classList.remove("block");
+}
+
+function fourth_arrow_back() {
+    arrow3.parentElement.classList.add("block");
+    arrow4.parentElement.classList.remove("block");
 }
 
 
@@ -48,4 +60,5 @@ slide2H2.addEventListener("click", function(){
 setInterval(function addIE(){
     IE.classList.add("block");
     IE.classList.remove("none");
+    IE.classList.add("blinking");
     }, 8000);

@@ -20,7 +20,27 @@
     background-color: $secondary-color;
     display: none;
     animation: fadein3 2s;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-2-2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-2-3 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-2-4 {
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -38,6 +58,12 @@
     flex-direction: row;
     justify-content: space-around;
     font-family: $font-second;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.blinking {
+    animation: blink 0.8s infinite alternate;
 }
 
 .none {
@@ -192,6 +218,11 @@ h3 {
         transform: translateX(0px);
         font-size: 3em;
       }
+}
+
+@keyframes blink {
+    0%   {color:red;}
+    100% {color:black;}
 }
 
 @keyframes colorChange {
