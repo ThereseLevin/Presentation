@@ -51,6 +51,7 @@ function second_arrow_back() {
     arrow1.parentElement.classList.remove("none");
     h2.classList.remove("none");
     wat.classList.add("none");
+    flexInfo.classList.add("none");
 }
 
 function third_arrow_back() {

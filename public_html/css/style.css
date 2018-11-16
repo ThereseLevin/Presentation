@@ -438,8 +438,8 @@ template {
 .slide-3 {
   display: none;
   background-color: #e6b7b7;
-  -webkit-animation: fadein2 5s;
-          animation: fadein2 5s;
+  -webkit-animation: fadein2 2s;
+          animation: fadein2 2s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -516,8 +516,8 @@ h2 {
 }
 
 .slide-3 h2 {
-  -webkit-animation: fadein 3s;
-          animation: fadein 3s;
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s;
   font-size: 4em;
   margin-top: 1em;
   font-family: "Didact Gothic", sans-serif;
