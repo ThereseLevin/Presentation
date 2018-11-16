@@ -11,6 +11,20 @@ let IE = document.querySelector(".IE");
 let h2 = document.querySelector(".h2");
 let wat = document.querySelector(".wat");
 let flexInfo = document.querySelector(".flexInfo");
+let f1 = document.querySelector("#f1");
+let f2 = document.querySelector("#f2");
+let f3 = document.querySelector("#f3");
+let f4 = document.querySelector("#f4");
+let f5 = document.querySelector("#f5");
+let f6 = document.querySelector("#f6");
+let f7 = document.querySelector(".f7");
+let f8 = document.querySelector(".f8");
+let f9 = document.querySelector(".f9");
+let f10 = document.querySelector(".f10");
+let f11 = document.querySelector(".f11");
+let f12 = document.querySelector(".f12");
+let change = document.querySelector(".change");
+
 
 
 /* Functions for switching to the right with arrows */
@@ -35,6 +49,8 @@ function third_arrow() {
 function second_arrow_back() {
     arrow2.parentElement.classList.remove("block");
     arrow1.parentElement.classList.remove("none");
+    h2.classList.remove("none");
+    wat.classList.add("none");
 }
 
 function third_arrow_back() {
@@ -64,10 +80,14 @@ slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
 
-document.body.onkeyup = function(event) {
-    h2.classList.add("none");
-    wat.classList.remove("none");
-  }
+f8.addEventListener("click", function(){
+    f2.parentElement.classList.add("flexEnd");
+    f8.classList.add("active");
+    f7.classList.remove("active");
+    change.innerHTML = "flex-end";
+});
+
+
 
 /* Set Intervals */
 

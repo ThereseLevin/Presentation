@@ -363,7 +363,6 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   color: white;
-  text-shadow: 2px 2px #000000;
   -webkit-animation: fadein2 2s forwards;
           animation: fadein2 2s forwards;
   z-index: 10;
@@ -441,6 +440,17 @@ template {
   background-color: saddlebrown;
   -webkit-animation: fadein2 5s;
           animation: fadein2 5s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-3 h2, h3 {
+  text-align: center;
 }
 
 .flex-row {
@@ -476,6 +486,8 @@ template {
 
 i {
   cursor: pointer;
+  text-shadow: 2px 2px #000000;
+  color: white;
 }
 
 .right {
@@ -526,6 +538,7 @@ h3 {
   text-align: center;
   font-size: 8em;
   font-family: "Poiret One", cursive;
+  text-shadow: 2px 2px #000000;
 }
 
 .span2 {
@@ -602,6 +615,94 @@ ul {
 
 li {
   padding-bottom: 1em;
+}
+
+.flexDemo {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 1px solid black;
+}
+
+.flexName {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5em;
+  font-family: "Didact Gothic", sans-serif;
+  cursor: pointer;
+}
+
+.flexEnd {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spaceAround {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.spaceEvenly {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flexDemo div {
+  width: 2em;
+  height: 2em;
+}
+
+.active {
+  color: red;
+}
+
+#f1 {
+  background-color: seagreen;
+}
+
+#f2 {
+  background-color: skyblue;
+}
+
+#f3 {
+  background-color: salmon;
+}
+
+#f4 {
+  background-color: tan;
+}
+
+#f5 {
+  background-color: mediumaquamarine;
+}
+
+#f6 {
+  background-color: khaki;
 }
 
 @-webkit-keyframes bounce {

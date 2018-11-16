@@ -3,8 +3,7 @@
 
 .slide {
     height: 100vh;
-    width: 100vw;
-    
+    width: 100vw; 
 }
 
 .slide-1 {
@@ -15,13 +14,14 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    text-shadow: $shadow;
+    
     animation: fadein2 2s forwards;
     z-index: 10;
 }
 
 .h2 {
     cursor: pointer;
+    
 }
 
 .wat {
@@ -72,6 +72,12 @@
     display: none;
     background-color: saddlebrown;
     animation: fadein2 5s;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slide-3 h2, h3 {
+    text-align: center;
 }
 
 .flex-row {
@@ -98,7 +104,8 @@
 
 i {
     cursor: pointer;
-    
+    text-shadow: $shadow;
+    color: white;
 }
 
 .right {
@@ -149,7 +156,7 @@ h3 {
     text-align: center;
     font-size: 8em;
     font-family: $font-second;
-    
+    text-shadow: $shadow;
 }
 
 .span2 {
@@ -216,6 +223,78 @@ ul {
 li {
     padding-bottom: 1em;
 }
+
+.flexDemo {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+
+.flexName {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-family: $font-main;
+    cursor: pointer;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.flexDemo div {
+    width: 2em;
+    height: 2em;
+}
+
+.active {
+    color: red;
+}
+
+#f1 {
+    background-color: seagreen;
+}
+
+#f2 {
+    background-color: skyblue;
+}
+
+#f3 {
+    background-color: salmon;
+}
+
+#f4 {
+    background-color: tan;
+}
+
+#f5 {
+    background-color: mediumaquamarine;
+}
+
+#f6 {
+    background-color: khaki;
+}
+
 
 
 @keyframes bounce {
