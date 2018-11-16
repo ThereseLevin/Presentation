@@ -70,7 +70,7 @@
 
 .slide-3 {
     display: none;
-    background-color: saddlebrown;
+    background-color: $primary-color;
     animation: fadein2 5s;
     justify-content: center;
     flex-direction: column;
@@ -129,7 +129,15 @@ h2 {
     animation: fadein 3s;
     font-family: $font-main;
     margin: 0;
-    animation: fadein 5s;
+}
+
+.slide-3 h2 {
+    animation: fadein 3s;
+    font-size: 4em;
+    margin-top: 1em;
+    font-family: $font-main;
+    color: white;
+    margin: 0;
 }
 
 p {
@@ -263,8 +271,8 @@ li {
 }
 
 .flexDemo div {
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
 }
 
 .active {

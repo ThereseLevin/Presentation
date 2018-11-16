@@ -80,11 +80,99 @@ slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
 
+f7.addEventListener("click", function(){
+    f7.classList.add("active");
+    f2.parentElement.classList.remove("center");
+    f2.parentElement.classList.remove("spaceBetween");
+    f2.parentElement.classList.remove("flexEnd");
+    f2.parentElement.classList.remove("spaceAround");
+    f2.parentElement.classList.remove("spaceEvenly");
+    f8.classList.remove("active");
+    f9.classList.remove("active");
+    f10.classList.remove("active");
+    f11.classList.remove("active");
+    f12.classList.remove("active");
+    change.innerHTML = "flex-start";
+});
+
 f8.addEventListener("click", function(){
-    f2.parentElement.classList.add("flexEnd");
     f8.classList.add("active");
+    f2.parentElement.classList.add("flexEnd");
+    f2.parentElement.classList.remove("center");
+    f2.parentElement.classList.remove("spaceBetween");
+    f2.parentElement.classList.remove("spaceAround");
+    f2.parentElement.classList.remove("spaceEvenly");
+    f2.parentElement.classList.remove("flexStart");
     f7.classList.remove("active");
+    f9.classList.remove("active");
+    f10.classList.remove("active");
+    f11.classList.remove("active");
+    f12.classList.remove("active");
     change.innerHTML = "flex-end";
+});
+
+f9.addEventListener("click", function(){
+    f2.parentElement.classList.add("center");
+    f2.parentElement.classList.remove("spaceBetween");
+    f2.parentElement.classList.remove("flexEnd");
+    f2.parentElement.classList.remove("spaceAround");
+    f2.parentElement.classList.remove("spaceEvenly");
+    f2.parentElement.classList.remove("flexStart");
+    f9.classList.add("active");
+    f8.classList.remove("active");
+    f7.classList.remove("active");
+    f10.classList.remove("active");
+    f11.classList.remove("active");
+    f12.classList.remove("active");
+    change.innerHTML = "center";
+});
+
+f10.addEventListener("click", function(){
+    f10.classList.add("active");
+    f2.parentElement.classList.add("spaceBetween");
+    f2.parentElement.classList.remove("center");
+    f2.parentElement.classList.remove("flexEnd");
+    f2.parentElement.classList.remove("spaceAround");
+    f2.parentElement.classList.remove("spaceEvenly");
+    f2.parentElement.classList.remove("flexStart");
+    f7.classList.remove("active");
+    f8.classList.remove("active");
+    f9.classList.remove("active");
+    f11.classList.remove("active");
+    f12.classList.remove("active");
+    change.innerHTML = "space-between";
+});
+
+f11.addEventListener("click", function(){
+    f11.classList.add("active");
+    f2.parentElement.classList.add("spaceAround");
+    f2.parentElement.classList.remove("center");
+    f2.parentElement.classList.remove("flexEnd");
+    f2.parentElement.classList.remove("spaceBetween");
+    f2.parentElement.classList.remove("spaceEvenly");
+    f2.parentElement.classList.remove("flexStart");
+    f7.classList.remove("active");
+    f8.classList.remove("active");
+    f9.classList.remove("active");
+    f10.classList.remove("active");
+    f12.classList.remove("active");
+    change.innerHTML = "space-around";
+});
+
+f12.addEventListener("click", function(){
+    f12.classList.add("active");
+    f2.parentElement.classList.add("spaceEvenly");
+    f2.parentElement.classList.remove("center");
+    f2.parentElement.classList.remove("flexEnd");
+    f2.parentElement.classList.remove("spaceBetween");
+    f2.parentElement.classList.remove("spaceAround");
+    f2.parentElement.classList.remove("flexStart");
+    f7.classList.remove("active");
+    f8.classList.remove("active");
+    f9.classList.remove("active");
+    f10.classList.remove("active");
+    f11.classList.remove("active");
+    change.innerHTML = "space-evenly";
 });
 
 

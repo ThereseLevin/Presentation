@@ -437,7 +437,7 @@ template {
 
 .slide-3 {
   display: none;
-  background-color: saddlebrown;
+  background-color: #e6b7b7;
   -webkit-animation: fadein2 5s;
           animation: fadein2 5s;
   -webkit-box-pack: center;
@@ -513,8 +513,16 @@ h2 {
           animation: fadein 3s;
   font-family: "Didact Gothic", sans-serif;
   margin: 0;
-  -webkit-animation: fadein 5s;
-          animation: fadein 5s;
+}
+
+.slide-3 h2 {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+  font-size: 4em;
+  margin-top: 1em;
+  font-family: "Didact Gothic", sans-serif;
+  color: white;
+  margin: 0;
 }
 
 p {
@@ -673,8 +681,8 @@ li {
 }
 
 .flexDemo div {
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
 }
 
 .active {
