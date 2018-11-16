@@ -351,7 +351,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #CE9A3A;
+  background-color: #e4be77;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -377,7 +377,7 @@ template {
 }
 
 .slide-2 {
-  background-color: #887ca9;
+  background-color: #bb9fc1;
   display: none;
   -webkit-animation: fadein3 2s;
           animation: fadein3 2s;
@@ -630,7 +630,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 5em auto;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -642,7 +642,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
