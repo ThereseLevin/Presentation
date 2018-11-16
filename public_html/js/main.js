@@ -10,6 +10,7 @@ let slide2H2 = document.querySelector(".slide2H2");
 let IE = document.querySelector(".IE");
 let h2 = document.querySelector(".h2");
 let wat = document.querySelector(".wat");
+let flexInfo = document.querySelector(".flexInfo");
 
 
 /* Functions for switching to the right with arrows */
@@ -51,22 +52,26 @@ function clickMe(){
     wat.classList.remove("none");
 }
 
+function clickMe2(){
+    wat.classList.add("none");
+    flexInfo.classList.remove("none");
+}
+
 
 /* Eventlisternes */
-
-h3.addEventListener("click", function(){
-    h3.classList.add("colorChange");
-});
 
 slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
 
+document.body.onkeyup = function(event) {
+    h2.classList.add("none");
+    wat.classList.remove("none");
+  }
 
 /* Set Intervals */
 
 setInterval(function addIE(){
-    IE.classList.add("block");
     IE.classList.remove("none");
     IE.classList.add("blinking");
     }, 8000);

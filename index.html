@@ -15,7 +15,7 @@
 	<div class="presentation">
 		
 		<div class="slide slide-1">
-			<h2 class="h2" onclick="clickMe()">Varför du bör använda 
+			<h2 class="h2" onclick="clickMe()">Varför du ska börja använda 
 				<div class="span1">
 					<span class="span2">F</span>
 					<span class="span3">l</span>
@@ -28,8 +28,20 @@
 			</h2>
 			<div class="frog"></div>
 
-			<h2 class="wat none">Vad är då FlexBox?</h2>
+			<h2 class="wat none" onclick="clickMe2()">Vad är då FlexBox?</h2>
+			<div class="flexInfo none">
+				<h3>The Flexible Box Module</h3>
+				<ul>
+					<li>one-dimensional layout model</li>
+					<li>space distribution</li>
+					<li>powerful alignment capabilities</li>
+					<li> one dimension at a time — either as a row or as a column</li>
+					<li>two-dimensional model - CSS Grid Layout</li>
+				</ul>
+			</div>
+
 			<i class="material-icons arrow1 right" onclick="first_arrow()">arrow_forward_ios</i>
+
 		</div> <!-- / .slide-1-->
 
 		<div class="slide slide-2">
@@ -46,7 +58,7 @@
 				<div class="span10">Samsung Internet</div>
 			</div>
 			<div>
-				<div class="IE none"><p>Men inte IE 10 och mindre...</p></div>
+				<div class="IE none"><p>Men inte IE 10 och lägre...</p></div>
 			</div>
 			<i class="material-icons arrowBack2 left" onclick="second_arrow_back()">arrow_back_ios</i>
 			<i class="material-icons arrow2 right" onclick="second_arrow()">arrow_forward_ios</i>
@@ -54,6 +66,9 @@
 
 		<div class="slide slide-2-2">
 				<h2 class="slide2H2">Slide 3</h2>
+				<video width="1000" controls>
+						<source src="public_html/media/flex.MP4" type="video/mp4">
+				</video>
 				<i class="material-icons arrowBack3 left" onclick="third_arrow_back()">arrow_back_ios</i>
 				<i class="material-icons arrow3 right" onclick="third_arrow()">arrow_forward_ios</i>
 		</div> <!-- / .slide-3-->

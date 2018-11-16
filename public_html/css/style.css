@@ -351,7 +351,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #CE9A3A;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -375,17 +375,6 @@ template {
 
 .wat {
   font-size: 4em;
-}
-
-.frog {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  background-image: url("../media/frog.jpg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  z-index: -10;
 }
 
 .slide-2 {
@@ -520,8 +509,15 @@ p {
   font-family: "Didact Gothic", sans-serif;
 }
 
-h3 {
+.wat h3 {
   cursor: pointer;
+}
+
+.flexInfo h3 {
+  font-size: 4em;
+}
+
+h3 {
   font-family: "Didact Gothic", sans-serif;
 }
 
@@ -587,6 +583,25 @@ h3 {
 .colorChange {
   -webkit-animation: colorChange 10s infinite alternate;
           animation: colorChange 10s infinite alternate;
+}
+
+.wat {
+  cursor: pointer;
+}
+
+.flexInfo {
+  -webkit-animation: textFadeIn 0.5s;
+          animation: textFadeIn 0.5s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding-bottom: 1em;
 }
 
 @-webkit-keyframes bounce {
