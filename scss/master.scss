@@ -19,9 +19,9 @@
     z-index: 10;
 }
 
-.h2 {
+.h2:hover {
     cursor: pointer;
-    
+    color: $secondary-color;
 }
 
 .wat {
@@ -101,6 +101,7 @@
 .block {
     display: flex;
 }
+
 
 i {
     cursor: pointer;
@@ -213,9 +214,13 @@ h3 {
     animation: colorChange 10s infinite alternate;
 }
 
-.wat {
+
+.wat:hover {
     cursor: pointer;
+    color: $secondary-color;
 }
+
+
 
 .flexInfo {
     animation: textFadeIn 0.5s;
@@ -225,7 +230,8 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    
+    font-family: $font-main;
+    font-size: 1.5em;
 }
 
 li {
@@ -276,7 +282,7 @@ li {
 }
 
 .active {
-    color: red;
+    color: $quaternary-color;
 }
 
 #f1 {
@@ -303,7 +309,9 @@ li {
     background-color: khaki;
 }
 
-
+.hideArrow {
+    display: none;
+}
 
 @keyframes bounce {
     from {

@@ -368,8 +368,9 @@ template {
   z-index: 10;
 }
 
-.h2 {
+.h2:hover {
   cursor: pointer;
+  color: #bb9fc1;
 }
 
 .wat {
@@ -486,7 +487,7 @@ template {
 
 i {
   cursor: pointer;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #eb6556;
   color: white;
 }
 
@@ -546,7 +547,7 @@ h3 {
   text-align: center;
   font-size: 8em;
   font-family: "Poiret One", cursive;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #eb6556;
 }
 
 .span2 {
@@ -606,8 +607,9 @@ h3 {
           animation: colorChange 10s infinite alternate;
 }
 
-.wat {
+.wat:hover {
   cursor: pointer;
+  color: #bb9fc1;
 }
 
 .flexInfo {
@@ -619,6 +621,8 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5em;
 }
 
 li {
@@ -686,7 +690,7 @@ li {
 }
 
 .active {
-  color: red;
+  color: #eb6556;
 }
 
 #f1 {
@@ -711,6 +715,10 @@ li {
 
 #f6 {
   background-color: khaki;
+}
+
+.hideArrow {
+  display: none;
 }
 
 @-webkit-keyframes bounce {

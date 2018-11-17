@@ -5,6 +5,7 @@ let arrow1 = document.querySelector('.arrow1');
 let arrow2 = document.querySelector('.arrow2');
 let arrow3 = document.querySelector('.arrow3');
 let arrow4 = document.querySelector('.arrow4');
+let slide1 = document.querySelector('.slide-1');
 let h3 = document.querySelector("h3");
 let slide2H2 = document.querySelector(".slide2H2");
 let IE = document.querySelector(".IE");
@@ -24,12 +25,13 @@ let f10 = document.querySelector(".f10");
 let f11 = document.querySelector(".f11");
 let f12 = document.querySelector(".f12");
 let change = document.querySelector(".change");
+let hideArrow = document.querySelector(".hideArrow");
 
 
 
 /* Functions for switching to the right with arrows */
 function first_arrow() { 
-    arrow1.parentElement.classList.add("none");
+    slide1.classList.add("none");
     arrow2.parentElement.classList.add("block"); 
 }
 
@@ -48,10 +50,11 @@ function third_arrow() {
 
 function second_arrow_back() {
     arrow2.parentElement.classList.remove("block");
-    arrow1.parentElement.classList.remove("none");
+    slide1.classList.remove("none");
     h2.classList.remove("none");
     wat.classList.add("none");
     flexInfo.classList.add("none");
+    hideArrow.classList.add("hideArrow");
 }
 
 function third_arrow_back() {
@@ -72,6 +75,7 @@ function clickMe(){
 function clickMe2(){
     wat.classList.add("none");
     flexInfo.classList.remove("none");
+    hideArrow.classList.remove("hideArrow");
 }
 
 
@@ -80,6 +84,7 @@ function clickMe2(){
 slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
+
 
 f7.addEventListener("click", function(){
     f7.classList.add("active");
