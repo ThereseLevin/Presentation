@@ -377,6 +377,36 @@ template {
   font-size: 4em;
 }
 
+#f1 {
+  -webkit-animation: textFadeIn 1s;
+          animation: textFadeIn 1s;
+}
+
+#f2 {
+  -webkit-animation: textFadeIn 1.5s;
+          animation: textFadeIn 1.5s;
+}
+
+#f3 {
+  -webkit-animation: textFadeIn 2s;
+          animation: textFadeIn 2s;
+}
+
+#f4 {
+  -webkit-animation: textFadeIn 2.5s;
+          animation: textFadeIn 2.5s;
+}
+
+#f5 {
+  -webkit-animation: textFadeIn 3s;
+          animation: textFadeIn 3s;
+}
+
+#f6 {
+  -webkit-animation: textFadeIn 3.5s;
+          animation: textFadeIn 3.5s;
+}
+
 .slide-2 {
   background-color: #bb9fc1;
   display: none;

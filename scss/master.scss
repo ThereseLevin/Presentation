@@ -28,16 +28,29 @@
     font-size: 4em;
 }
 
-// .frog {
-//     //transform: scaleX(-1);
-//     background-image: url("../media/com.jpg");
-//     background-size: cover;
-//     width: 100vw;
-//     height: 100vh;
-//     position: absolute;
-//     z-index: -10;
-// }
+#f1 {
+    animation: textFadeIn 1s;
+}
 
+#f2 {
+    animation: textFadeIn 1.5s;
+}
+
+#f3 {
+    animation: textFadeIn 2s;
+}
+
+#f4 {
+    animation: textFadeIn 2.5s;
+}
+
+#f5 {
+    animation: textFadeIn 3s;
+}
+
+#f6 {
+    animation: textFadeIn 3.5s;
+}
 .slide-2 {
     background-color: $secondary-color;
     display: none;
