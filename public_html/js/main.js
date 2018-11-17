@@ -33,6 +33,18 @@ let hideArrow = document.querySelector(".hideArrow");
 function first_arrow() { 
     slide1.classList.add("none");
     arrow2.parentElement.classList.add("block"); 
+    if (IE.className = "blinking"){
+        setInterval(function removeIE(){
+            IE.classList.add("none");
+            IE.classList.remove("blinking");
+            }, 10000);
+    return;
+     }
+
+setInterval(function addIE(){
+    IE.classList.remove("none");
+    IE.classList.add("blinking");
+    }, 8000);
 }
 
 function second_arrow() {
@@ -185,7 +197,7 @@ f12.addEventListener("click", function(){
 
 /* Set Intervals */
 
-setInterval(function addIE(){
-    IE.classList.remove("none");
-    IE.classList.add("blinking");
-    }, 8000);
+
+ /* IF */
+
+ 
