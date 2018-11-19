@@ -8,6 +8,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Didact+Gothic");
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 html {
   line-height: 1.15;
   /* 1 */
@@ -370,7 +371,7 @@ template {
 
 .h2:hover {
   cursor: pointer;
-  color: #bb9fc1;
+  text-shadow: 2px 2px rgba(41, 41, 41, 0.7);
 }
 
 .wat {
@@ -408,7 +409,7 @@ template {
 }
 
 .slide-2 {
-  background-color: #bb9fc1;
+  background-color: #e6b7b7;
   display: none;
   -webkit-animation: fadein3 2s;
           animation: fadein3 2s;
@@ -517,7 +518,7 @@ template {
 
 i {
   cursor: pointer;
-  text-shadow: 2px 2px #eb6556;
+  text-shadow: 2px 2px rgba(136, 134, 133, 0.646);
   color: white;
 }
 
@@ -536,7 +537,7 @@ i {
 }
 
 i:hover {
-  color: darkorange;
+  text-shadow: 2px 2px rgba(41, 41, 41, 0.7);
 }
 
 h2 {
@@ -577,7 +578,11 @@ h3 {
   text-align: center;
   font-size: 8em;
   font-family: "Poiret One", cursive;
-  text-shadow: 2px 2px #eb6556;
+  text-shadow: 2px 2px rgba(136, 134, 133, 0.646);
+}
+
+.span1:hover {
+  text-shadow: 2px 2px rgba(41, 41, 41, 0.7);
 }
 
 .span2 {
@@ -628,6 +633,7 @@ h3 {
 .slide2H2 {
   -webkit-animation: dropin 2s;
           animation: dropin 2s;
+  color: white;
   font-size: 3em;
   margin-bottom: 1em;
 }
@@ -639,7 +645,7 @@ h3 {
 
 .wat:hover {
   cursor: pointer;
-  color: #bb9fc1;
+  text-shadow: 2px 2px rgba(41, 41, 41, 0.7);
 }
 
 .flexInfo {
@@ -659,6 +665,30 @@ li {
   padding-bottom: 1em;
 }
 
+.press {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-animation: textFadeIn 5s;
+          animation: textFadeIn 5s;
+  margin-top: 1em;
+}
+
+.press p {
+  font-family: "Amatic SC", cursive;
+  color: black;
+  font-size: 2em;
+}
+
+.press img {
+  width: 3em;
+  margin: 0.5em;
+}
+
 .flexDemo {
   width: 80%;
   display: -webkit-box;
@@ -669,6 +699,7 @@ li {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .flexName {
@@ -720,7 +751,7 @@ li {
 }
 
 .active {
-  color: #eb6556;
+  color: rgba(242, 83, 55, 0.646);
 }
 
 #f1 {

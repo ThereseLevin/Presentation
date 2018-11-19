@@ -21,7 +21,7 @@
 
 .h2:hover {
     cursor: pointer;
-    color: $secondary-color;
+    text-shadow: $shadow2;
 }
 
 .wat {
@@ -52,13 +52,14 @@
     animation: textFadeIn 3.5s;
 }
 .slide-2 {
-    background-color: $secondary-color;
+    background-color: $primary-color;
     display: none;
     animation: fadein3 2s;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 
 .slide-2-2 {
     display: none;
@@ -136,7 +137,7 @@ i {
 }
 
 i:hover {
-    color: darkorange;
+    text-shadow: $shadow2;
 }
 
 h2 {
@@ -181,6 +182,10 @@ h3 {
     text-shadow: $shadow;
 }
 
+.span1:hover {
+    text-shadow: $shadow2;
+}
+
 .span2 {
     animation: textFadeIn 0.5s;
 }
@@ -219,6 +224,7 @@ h3 {
 
 .slide2H2 {
     animation: dropin 2s;
+    color: white;
     font-size: 3em;
     margin-bottom: 1em;
 }
@@ -230,7 +236,7 @@ h3 {
 
 .wat:hover {
     cursor: pointer;
-    color: $secondary-color;
+    text-shadow: $shadow2
 }
 
 
@@ -251,12 +257,32 @@ li {
     padding-bottom: 1em;
 }
 
+.press {
+    display: flex;
+    width: 60%;
+    align-items: baseline;
+    animation: textFadeIn 5s;
+    margin-top: 1em;
+}
+
+.press p {
+    font-family: $font-third;
+    color: black;
+    font-size: 2em;
+}
+
+.press img {
+    width: 3em;
+    margin: 0.5em;
+}
+
 .flexDemo {
     width: 80%;
     display: flex;
     margin: 5em auto;
     justify-content: flex-start;
     border: 1px solid black;
+    background-color: $transparent;
 }
 
 .flexName {
