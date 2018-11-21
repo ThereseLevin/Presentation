@@ -26,6 +26,9 @@ let f11 = document.querySelector(".f11");
 let f12 = document.querySelector(".f12");
 let change = document.querySelector(".change");
 let hideArrow = document.querySelector(".hideArrow");
+let display = document.querySelector("#display");
+let justify = document.querySelector("#justify");
+let align = document.querySelector("#align");
 
 
 
@@ -86,7 +89,7 @@ function clickMe(){
     h2.classList.add("none");
     wat.classList.remove("none");
     /* Hide click here */
-    var press = document.querySelector('.press');
+    let press = document.querySelector('.press');
     press.style.display = 'none';
  
 }
@@ -103,6 +106,13 @@ function clickMe2(){
 slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
+
+document.addEventListener('keydown', function(event) {
+    display.parentElement.className = "block";
+    justify.parentElement.className = "block";
+    align.parentElement.className = "block";
+});
+
 
 f7.addEventListener("click", function(){
     f7.classList.add("active");
