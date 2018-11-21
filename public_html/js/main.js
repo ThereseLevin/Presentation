@@ -36,19 +36,18 @@ let align = document.querySelector("#align");
 function first_arrow() { 
     slide1.classList.add("none");
     arrow2.parentElement.classList.add("block"); 
-   
-    if (IE.className = "blinking"){
+
+    if (IE.classList = "blinking"){
         setInterval(function removeIE(){
             IE.classList.add("none");
             IE.classList.remove("blinking");
             }, 10000);
     return;
+     } else {
+        IE.classList.add("blinking");
      }
 
-setInterval(function addIE(){
-    IE.classList.remove("none");
-    IE.classList.add("blinking");
-    }, 20000);
+    
 
 
 }

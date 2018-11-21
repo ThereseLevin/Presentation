@@ -454,6 +454,8 @@ template {
           justify-content: space-between;
   font-family: "Didact Gothic", sans-serif;
   font-size: 1.5em;
+  position: relative;
+  top: 3em;
 }
 
 .slide-2-3 {
@@ -502,6 +504,13 @@ template {
   text-align: center;
 }
 
+audio {
+  position: fixed;
+  right: 1em;
+  margin: 1em;
+  z-index: 10;
+}
+
 .flex-row {
   width: 80%;
   display: -webkit-box;
@@ -516,11 +525,15 @@ template {
   font-family: "Poiret One", cursive;
   font-weight: bolder;
   font-size: 1.3em;
+  position: fixed;
+  top: 58vh;
 }
 
 .blinking {
   -webkit-animation: blink 0.8s infinite alternate;
           animation: blink 0.8s infinite alternate;
+  position: fixed;
+  top: 65vh;
 }
 
 .none {
@@ -653,6 +666,7 @@ h3 {
   color: white;
   font-size: 3em;
   margin-bottom: 1em;
+  position: fixed;
 }
 
 .colorChange {
