@@ -104,14 +104,9 @@ slide2H2.addEventListener("click", function(){
     slide2H2.classList.add("colorChange");
 });
 
-
 f7.addEventListener("click", function(){
     f7.classList.add("active");
-    f2.parentElement.classList.remove("center");
-    f2.parentElement.classList.remove("spaceBetween");
-    f2.parentElement.classList.remove("flexEnd");
-    f2.parentElement.classList.remove("spaceAround");
-    f2.parentElement.classList.remove("spaceEvenly");
+    f2.parentElement.className = "flexStart";
     f8.classList.remove("active");
     f9.classList.remove("active");
     f10.classList.remove("active");
@@ -122,12 +117,7 @@ f7.addEventListener("click", function(){
 
 f8.addEventListener("click", function(){
     f8.classList.add("active");
-    f2.parentElement.classList.add("flexEnd");
-    f2.parentElement.classList.remove("center");
-    f2.parentElement.classList.remove("spaceBetween");
-    f2.parentElement.classList.remove("spaceAround");
-    f2.parentElement.classList.remove("spaceEvenly");
-    f2.parentElement.classList.remove("flexStart");
+    f2.parentElement.className = "flexEnd";
     f7.classList.remove("active");
     f9.classList.remove("active");
     f10.classList.remove("active");
@@ -137,13 +127,8 @@ f8.addEventListener("click", function(){
 });
 
 f9.addEventListener("click", function(){
-    f2.parentElement.classList.add("center");
-    f2.parentElement.classList.remove("spaceBetween");
-    f2.parentElement.classList.remove("flexEnd");
-    f2.parentElement.classList.remove("spaceAround");
-    f2.parentElement.classList.remove("spaceEvenly");
-    f2.parentElement.classList.remove("flexStart");
     f9.classList.add("active");
+    f2.parentElement.className = "center";
     f8.classList.remove("active");
     f7.classList.remove("active");
     f10.classList.remove("active");
@@ -154,12 +139,7 @@ f9.addEventListener("click", function(){
 
 f10.addEventListener("click", function(){
     f10.classList.add("active");
-    f2.parentElement.classList.add("spaceBetween");
-    f2.parentElement.classList.remove("center");
-    f2.parentElement.classList.remove("flexEnd");
-    f2.parentElement.classList.remove("spaceAround");
-    f2.parentElement.classList.remove("spaceEvenly");
-    f2.parentElement.classList.remove("flexStart");
+    f2.parentElement.className = "spaceBetween";
     f7.classList.remove("active");
     f8.classList.remove("active");
     f9.classList.remove("active");
@@ -170,12 +150,7 @@ f10.addEventListener("click", function(){
 
 f11.addEventListener("click", function(){
     f11.classList.add("active");
-    f2.parentElement.classList.add("spaceAround");
-    f2.parentElement.classList.remove("center");
-    f2.parentElement.classList.remove("flexEnd");
-    f2.parentElement.classList.remove("spaceBetween");
-    f2.parentElement.classList.remove("spaceEvenly");
-    f2.parentElement.classList.remove("flexStart");
+    f2.parentElement.className = "spaceAround";
     f7.classList.remove("active");
     f8.classList.remove("active");
     f9.classList.remove("active");
@@ -186,12 +161,7 @@ f11.addEventListener("click", function(){
 
 f12.addEventListener("click", function(){
     f12.classList.add("active");
-    f2.parentElement.classList.add("spaceEvenly");
-    f2.parentElement.classList.remove("center");
-    f2.parentElement.classList.remove("flexEnd");
-    f2.parentElement.classList.remove("spaceBetween");
-    f2.parentElement.classList.remove("spaceAround");
-    f2.parentElement.classList.remove("flexStart");
+    f2.parentElement.className = "spaceEvenly";
     f7.classList.remove("active");
     f8.classList.remove("active");
     f9.classList.remove("active");
@@ -199,5 +169,23 @@ f12.addEventListener("click", function(){
     f11.classList.remove("active");
     change.innerHTML = "space-evenly";
 });
+
+// Another way to do it
+// f12.addEventListener("click", function(){
+//     f12.classList.add("active");
+//     f2.parentElement.className = "spaceEvenly";
+//     // f2.parentElement.classList.add("spaceEvenly");
+//     // f2.parentElement.classList.remove("center");
+//     // f2.parentElement.classList.remove("flexEnd");
+//     // f2.parentElement.classList.remove("spaceBetween");
+//     // f2.parentElement.classList.remove("spaceAround");
+//     // f2.parentElement.classList.remove("flexStart");
+//     f7.classList.remove("active");
+//     f8.classList.remove("active");
+//     f9.classList.remove("active");
+//     f10.classList.remove("active");
+//     f11.classList.remove("active");
+//     change.innerHTML = "space-evenly";
+// });
 
 
