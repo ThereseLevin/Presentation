@@ -63,9 +63,19 @@
 
 .slide-2-2 {
     display: none;
+    background-color: $quaternary-color;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.slide22list {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    justify-content: space-between;
+    font-family: $font-main;
+    font-size: 1.5em;
 }
 
 .slide-2-3 {

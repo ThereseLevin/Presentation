@@ -427,6 +427,7 @@ template {
 
 .slide-2-2 {
   display: none;
+  background-color: rgba(242, 83, 55, 0.646);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -437,6 +438,22 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.slide22list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5em;
 }
 
 .slide-2-3 {
