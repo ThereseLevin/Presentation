@@ -30,6 +30,7 @@ let display = document.querySelector("#display");
 let justify = document.querySelector("#justify");
 let align = document.querySelector("#align");
 let audio = document.querySelector("audio");
+let slide22list = document.querySelector(".slide22list");
 
 audio.classList.add('audioFade');
 
@@ -50,14 +51,12 @@ function first_arrow() {
         IE.classList.add("blinking");
      }
 
-    
-
-
 }
 
 function second_arrow() {
     arrow2.parentElement.classList.remove("block");
     arrow3.parentElement.classList.add("block");
+    
 }
 
 function third_arrow() {
@@ -113,6 +112,7 @@ document.addEventListener('keydown', function(event) {
     display.parentElement.className = "block";
     justify.parentElement.className = "block";
     align.parentElement.className = "block";
+    slide22list.classList.add("audioFade");
 });
 
 

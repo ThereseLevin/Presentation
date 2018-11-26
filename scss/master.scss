@@ -1,7 +1,6 @@
 @import "normalize";
 @import "variables";
 
-
 .audioFade {
     animation: fadein 5s;
 }
@@ -82,6 +81,7 @@
     font-size: 1.5em;
     position: relative;
     top: 3em;
+    animation: fadein 5s;
 }
 
 .slide-2-3 {
@@ -300,6 +300,7 @@ li {
     animation: textFadeIn 5s;
     position: absolute;
     right: 0;
+    top: 35vh;
 }
 
 .press p {
