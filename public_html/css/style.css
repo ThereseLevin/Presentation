@@ -343,6 +343,11 @@ template {
 /* FONTS */
 /* Font family */
 /* Shadow */
+.audioFade {
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s;
+}
+
 .slide {
   height: 100vh;
   width: 100vw;
@@ -709,7 +714,27 @@ li {
   margin-top: 1em;
 }
 
+.press2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-animation: textFadeIn 5s;
+          animation: textFadeIn 5s;
+  position: absolute;
+  right: 0;
+}
+
 .press p {
+  font-family: "Amatic SC", cursive;
+  color: black;
+  font-size: 2em;
+}
+
+.press2 p {
   font-family: "Amatic SC", cursive;
   color: black;
   font-size: 2em;
@@ -718,6 +743,13 @@ li {
 .press img {
   width: 3em;
   margin: 0.5em;
+}
+
+.press2 img {
+  width: 3em;
+  margin: 0.5em;
+  -webkit-transform: rotate(200deg);
+          transform: rotate(200deg);
 }
 
 #flexDemo {

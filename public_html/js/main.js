@@ -29,13 +29,16 @@ let hideArrow = document.querySelector(".hideArrow");
 let display = document.querySelector("#display");
 let justify = document.querySelector("#justify");
 let align = document.querySelector("#align");
+let audio = document.querySelector("audio");
 
+audio.classList.add('audioFade');
 
 
 /* Functions for switching to the right with arrows */
 function first_arrow() { 
     slide1.classList.add("none");
     arrow2.parentElement.classList.add("block"); 
+    
 
     if (IE.classList = "blinking"){
         setInterval(function removeIE(){
