@@ -461,6 +461,8 @@ template {
   font-size: 1.5em;
   position: relative;
   top: 3em;
+  -webkit-animation: fadein 5s;
+          animation: fadein 5s;
 }
 
 .slide-2-3 {
@@ -503,6 +505,62 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.slide-5 {
+  display: none;
+  background-color: #e4be77;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slide-5 h2 {
+  color: white;
+  font-size: 8em;
+  font-family: "Poiret One", cursive;
+}
+
+.slide-5 h4 {
+  color: white;
+  font-size: 2em;
+  font-family: "Didact Gothic", sans-serif;
+  -webkit-animation: fadein2 3s;
+          animation: fadein2 3s;
+  margin: 0;
+}
+
+.slide-5 h3 {
+  color: black;
+  font-size: 2em;
+  font-family: "Amatic SC", cursive;
+  -webkit-animation: fadein 7s;
+          animation: fadein 7s;
+}
+
+.froggy {
+  -webkit-animation: fadein 10s;
+          animation: fadein 10s;
+}
+
+.slide-5 h4 a {
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.slide-5 h4 a:hover {
+  text-shadow: 2px 2px rgba(41, 41, 41, 0.7);
 }
 
 .slide-3 h2, h3 {
@@ -726,6 +784,7 @@ li {
           animation: textFadeIn 5s;
   position: absolute;
   right: 0;
+  top: 35vh;
 }
 
 .press p {
@@ -1033,4 +1092,45 @@ li {
   100% {
     opacity: 1;
   }
+}
+.jump {
+  -webkit-animation: jump 0.5s alternate;
+          animation: jump 0.5s alternate;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  right: 3em;
+  top: 50vh;
+}
+
+.jump img {
+  width: 4em;
+  height: auto;
+}
+
+@-webkit-keyframes jump {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+}
+
+@keyframes jump {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 50px, 0);
+            transform: translate3d(0, 50px, 0);
+  }
+}
+.arrow5 {
+  display: none;
 }

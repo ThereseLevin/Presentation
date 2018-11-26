@@ -5,6 +5,7 @@ let arrow1 = document.querySelector('.arrow1');
 let arrow2 = document.querySelector('.arrow2');
 let arrow3 = document.querySelector('.arrow3');
 let arrow4 = document.querySelector('.arrow4');
+let arrow5 = document.querySelector('.arrow5');
 let slide1 = document.querySelector('.slide-1');
 let h3 = document.querySelector("h3");
 let slide2H2 = document.querySelector(".slide2H2");
@@ -65,6 +66,13 @@ function third_arrow() {
        
 }
 
+function fourth_arrow() {
+    arrow5.parentElement.classList.add("block"); 
+    arrow4.parentElement.classList.remove("block");
+       
+}
+
+
 /* Functions for switching to the left with arrows */
 
 function second_arrow_back() {
@@ -84,6 +92,11 @@ function third_arrow_back() {
 function fourth_arrow_back() {
     arrow3.parentElement.classList.add("block");
     arrow4.parentElement.classList.remove("block");
+}
+
+function fifth_arrow_back() {
+    arrow4.parentElement.classList.add("block");
+    arrow5.parentElement.classList.remove("block");
 }
 
 function clickMe(){
