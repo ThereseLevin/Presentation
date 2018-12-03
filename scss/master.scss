@@ -1,5 +1,8 @@
+/* - - - - MASTER - - - - */
+
 @import "normalize";
 @import "variables";
+@import "keyframes";
 
 .audioFade {
     animation: fadein 5s;
@@ -126,7 +129,7 @@
     color: white;
     font-size: 2em;
     font-family: $font-main;
-    animation: fadein2 3s;
+    animation: fadein 3s;
     margin: 0;
 }
 
@@ -451,78 +454,7 @@ li {
     display: none;
 }
 
-@keyframes bounce {
-    from {
-      transform: translateX(-0.5em);
-    }
-    to {
-      transform: translateX(0px);
-    }
-  }
 
-
-@keyframes fadein {
-    from { 
-        opacity: 0;
-     }
-    to   { 
-        opacity: 1; 
-    }
-}
-
-@keyframes fadein2 {
-        from { 
-            opacity: 0.5;
-            height: 0; 
-    }
-        to   {
-            opacity: 1;
-            height: 100vh; 
-    }
-}
-
-@keyframes fadein3 {
-        from { 
-            opacity: 0.5;
-            width: 0; 
-    }
-        to   { 
-            opacity: 1;
-            width: 100vw; 
-    }
-}
-
-@keyframes dropin {
-    from {
-        transform: translateY(-15em);
-        font-size: 0;
-      }
-      to {
-        transform: translateX(0px);
-        font-size: 3em;
-      }
-}
-
-@keyframes blink {
-    0%   {color:red;}
-    100% {color:black;}
-}
-
-@keyframes colorChange {
-    0%   {color:$primary-color;}
-    25%  {color:$secondary-color;}
-    50%  {color:$tertiary-color;}
-    75%  {color:$quaternary-color;}
-    100% {color:$quinary-color;}
-}
-
-@keyframes textFadeIn {
-    0%   {opacity: 0;}
-    25%  {opacity: 0;}
-    50%  {opacity: 0;}
-    75%  {opacity: 0.5;}
-    100% {opacity: 1;}
-}
 
 .jump {
     animation: jump 0.5s alternate;
@@ -530,7 +462,7 @@ li {
     animation-iteration-count: infinite;
     position: absolute;
     right: 3em;
-    top: 50vh;
+    top: 62vh;
 }
 
 .jump img {
@@ -538,10 +470,6 @@ li {
     height: auto;
 }
 
-@keyframes jump {
-    from { transform: translate3d(0, 0, 0) } 
-    to   { transform: translate3d(0, 50px, 0); }
-}
 
 .arrow5 {
     display: none;
